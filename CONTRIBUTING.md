@@ -1,30 +1,28 @@
-## Fork-and-Pull Git Workflow
+# Contributing to RepoFlow Docs
 
-- Fork → clone → upstream: `git remote add upstream https://github.com/repoflow-labs/repoflow-docs.git`
-- Branch naming: `feature/<scope>` | `fix/<scope>` | `docs/<scope>` | `chore/<scope>`
-- Never commit directly to main
-- Rebase on upstream/main before PR; merge commits prohibited
+## Getting Started
 
-## Commit Message Convention (Angular, enforced)
+1. Fork the repository
+2. Clone your fork: `git clone git@github.com:your-username/repoflow-docs.git`
+3. Install dependencies: `npm install`
+4. Start the dev server: `npm run dev`
 
-Format: `<type>(<scope>): <imperative subject ≤72 chars>`
+## Pull Request Process
 
-Types: `feat` | `fix` | `docs` | `chore` | `test` | `refactor` | `perf`
+1. Create a feature branch from `main`
+2. Make your changes
+3. Run `npm run lint` and `npm run typecheck`
+4. Open a PR against `main`
 
-Scopes: `guide`, `api`, `ci`
+## Commit Messages
 
-Examples:
-- `docs(guide): add Wave maintainer integration walkthrough`
-- `docs(api): document new claimRepo XDR format`
-- `fix(docs): correct broken links in integration section`
-- `chore(ci): add link checker to validation pipeline`
+Use conventional commit format: `type(scope): description`
 
-Breaking changes: `BREAKING CHANGE: <description>` in commit footer
+- `feat`: new feature
+- `fix`: bug fix
+- `docs`: documentation changes
+- `chore`: maintenance, config changes
 
-## PR Submission Requirements
+## Code of Conduct
 
-- All CI checks must pass before requesting review
-- Documentation accuracy: all code examples must be tested against contract ABI
-- Closes # in PR description
-- PR title follows same Angular convention
-- Minimum one maintainer approval before merge
+All contributors must adhere to the [Code of Conduct](CODE_OF_CONDUCT.md).

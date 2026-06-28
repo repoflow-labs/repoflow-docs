@@ -28,6 +28,18 @@ npm install
 npm run dev
 ```
 
+## Project Structure
+
+RepoFlow is organized as a monorepo with five submodules:
+
+| Submodule | Description | Language |
+|---|---|---|
+| `repoflow-contract` | Stellar Soroban smart contract | Rust |
+| `repoflow-indexer` | On-chain event indexer & API | Rust |
+| `repoflow-sdk` | TypeScript client library | TypeScript |
+| `repoflow-app` | Web dashboard | TypeScript (Next.js) |
+| `repoflow-docs` | Protocol documentation (this) | MDX (Next.js) |
+
 ## Technology Stack
 
 | Component | Technology | Version |
@@ -37,6 +49,6 @@ npm run dev
 | Styling | Tailwind CSS | 3.x |
 | Documentation | MDX | Latest |
 | Deployment | GitHub Pages | N/A |
-| Smart Contract | N/A | N/A |
-| Backend | N/A | N/A |
-| Infrastructure | N/A | N/A |
+| Smart Contract | Soroban (Stellar) | Latest |
+| Backend | Axum (Rust) | Latest |
+| Infrastructure | Cargo / npm | — |

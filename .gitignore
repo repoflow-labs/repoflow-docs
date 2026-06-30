@@ -2,3 +2,12 @@ node_modules/
 .next/
 out/
 .DS_Store
+Thumbs.db
+coverage/
+*.tsbuildinfo
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+*.log
+.vercel

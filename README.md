@@ -1,9 +1,19 @@
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
+[![CI](https://github.com/repoflow-labs/repoflow-docs/actions/workflows/ci.yml/badge.svg)](https://github.com/repoflow-labs/repoflow-docs/actions/workflows/ci.yml)
 [![Stellar](https://img.shields.io/badge/network-Stellar-black)](https://stellar.org)
 
 # RepoFlow Docs
 
 Protocol documentation and integration guides for the RepoFlow ecosystem.
+
+## Getting Started
+
+```bash
+npm install
+npm run dev
+```
+
+Open [http://localhost:3000](http://localhost:3000) in your browser.
 
 ## Technical Architecture
 
@@ -52,3 +62,7 @@ RepoFlow is organized as a monorepo with five submodules:
 | Smart Contract | Soroban (Stellar) | Latest |
 | Backend | Axum (Rust) | Latest |
 | Infrastructure | Cargo / npm | — |
+
+## Contributing
+
+See [CONTRIBUTING.md](CONTRIBUTING.md) and our [Code of Conduct](CODE_OF_CONDUCT.md).
